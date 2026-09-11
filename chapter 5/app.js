@@ -66,7 +66,7 @@ var totalCost = ticketPrice * numberOfTickets;
 document.write("Total cost to buy " + numberOfTickets + " tickets to a movie is " + totalCost + "PKR<br>");
  
 // 5. Write a script to display multiplication table of an number in your browser. E.g
-var tableNum = 5; 
+var tableNum = 4; 
 document.write("Table of " + tableNum + "<br>");
 document.write(tableNum + "x1=" + (tableNum * 1) + "<br>");
 document.write(tableNum + "x2=" + (tableNum * 2) + "<br>");
