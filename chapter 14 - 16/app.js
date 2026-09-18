@@ -71,3 +71,105 @@ var colorQuantity = +prompt("How many colors you want to remove?")
 
 colors.splice (deltIndex , colorQuantity )
 console.log(colors)
+
+// 11. Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.
+
+var cityName = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+
+var selectedCities = cityName.slice(1, 4); 
+
+console.log("Cities list:", cityName);
+console.log("Selected cities list:", selectedCities);
+
+document.write("<h3>Cities list:</h3>");
+document.write(cityName + "<br><br>");
+
+document.write("<h3>Selected cities list:</h3>");
+document.write(selectedCities + "<br>");
+
+// 12.  Write a program to create a single string from the below mentioned array: 
+// var arr = [“This ”, “ is ”, “ my ”, “ cat”]; (Use array’s join method)
+
+var array = ["This ", " is ", " my ", " cat"];
+var singleString = array.join("");
+console.log(singleString);
+
+/* 13. Create a new array. Store values one by one in such a way
+that you can access the values in the order in which they 
+were stored. (FIFO-First In First Out) */
+
+var device = [];
+
+
+device.push("keyboard");
+device.push("mouse");
+device.push("printer");
+device.push("monitor");
+
+console.log("Device Array:", device);
+document.write(`<b>Device:</b> ${device}<br><br>`);
+
+var out1 = device.shift();
+console.log("Out:", out1);
+document.write(`Out:<br> ${out1}<br>`);
+
+var out2 = device.shift();
+console.log("Out:", out2);
+document.write(`Out:<br> ${out2}<br>`);
+
+var out3 = device.shift();
+console.log("Out:", out3);
+document.write(`Out:<br> ${out3}<br>`);
+
+var out4 = device.shift();
+console.log("Out:", out4);
+document.write(`Out:<br> ${out4}<br>`);
+
+console.log("Array after FIFO operations:", device); 
+
+/* 14. Create a new array. Store values one by one in such a way
+that you can access the values in reverse order. (Last In First Out) */
+
+var devicesStack = [];
+
+
+deviceStack.push("keyboard");
+deviceStack.push("mouse");
+deviceStack.push("printer");
+deviceStack.push("monitor");
+
+console.log("Device Stack Array:", deviceStack);
+document.write(`<b>Device:</b> ${deviceStack}<br><br>`);
+
+
+var pop1 = deviceStack.pop();
+console.log("Out:", pop1);
+document.write(`Out:<br> ${pop1}<br>`);
+
+var pop2 = deviceStack.pop();
+console.log("Out:", pop2);
+document.write(`Out:<br> ${pop2}<br>`);
+
+var pop3 = deviceStack.pop();
+console.log("Out:", pop3);
+document.write(`Out:<br> ${pop3}<br>`);
+
+var pop4 = deviceStack.pop();
+console.log("Out:", pop4);
+document.write(`Out:<br> ${pop4}<br>`);
+
+console.log("Array after LIFO operations:", deviceStack);
+
+
+
+// 15. Write a program to store phone manufacturers (Apple, Samsung, Motorola, Nokia, Sony & Haier) in an array. Display the following dropdown/select menu in your browser using document.write() method:
+var manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+document.write(`<select>`);
+document.write(`<option>${manufacturers[0]}</option>`);
+document.write(`<option>${manufacturers[1]}</option>`);
+document.write(`<option>${manufacturers[2]}</option>`);
+document.write(`<option>${manufacturers[3]}</option>`);
+document.write(`<option>${manufacturers[4]}</option>`);
+document.write(`<option>${manufacturers[5]}</option>`);
+document.write(`</select>`);
