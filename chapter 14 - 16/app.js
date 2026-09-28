@@ -72,7 +72,7 @@ var colorQuantity = +prompt("How many colors you want to remove?")
 colors.splice (deltIndex , colorQuantity )
 console.log(colors)
 
-// 11. Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.
+//  Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.
 
 var cityName = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
 
