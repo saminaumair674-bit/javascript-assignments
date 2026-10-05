@@ -66,11 +66,26 @@ document.write("Upper case: " + str.toUpperCase())
 
 //Write a program that takes user input. Convert and 
 //show the input in title case.
+var userInput = prompt("Enter your text :");
+// Converting to title case (first letter capital, rest lowercase)
+var titleCaseInput = userInput.charAt(0).toUpperCase() + userInput.slice(1).toLowerCase();
+
+document.write("User input: " + userInput + "<br>");
+document.write("Title case: " + titleCaseInput + "<br><br>");
+
 
 //.Write a program that converts the variable num to 
 //string. 
 //var num = 35.36 ; 
 //Remove the dot to display “3536” display in your browser.
+var num = 35.36;
+var str = num.toString();
+var dotIndex = str.indexOf(".");
+str = str.slice(0,dotIndex) + str.slice(dotIndex + 1);
+document.write("Number: " + num + "<br>");
+document.write("Result: " + str);
+
+//.
 
 
 
